@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AbleOS Africa - Offline Mode Active</title>
+    <style>
+      body {
+        background-color: #080b11;
+        color: #f1f5f9;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 24px;
+        text-align: center;
+      }
+      .card {
+        background-color: rgba(15, 23, 42, 0.82);
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 480px;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+      }
+      .logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #6366f1, #f43f5e);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+        letter-spacing: -0.025em;
+      }
+      p {
+        color: #94a3b8;
+        font-size: 13px;
+        line-height: 1.6;
+        margin: 0 0 24px 0;
+      }
+      .badge {
+        display: inline-block;
+        background-color: rgba(16, 185, 129, 0.15);
+        color: #34d399;
+        border: 1px solid rgba(16, 185, 129, 0.2);
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-family: monospace;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+      .btn {
+        background-color: #4f46e5;
+        color: #ffffff;
+        border: none;
+        padding: 12px 24px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        text-decoration: none;
+      }
+      .btn:hover {
+        background-color: #4338ca;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="logo">A</div>
+      <br>
+      <span class="badge">AOS OFFLINE PROTECTION</span>
+      <h1>Low Connectivity Safeguard Active</h1>
+      <p>
+        AbleOS Africa has detected a temporary network disconnection. Your static layout templates, offline document notes, and local UI calculators are securely cached on your client node.
+      </p>
+      <button class="btn" onclick="window.location.reload()">Retry Connection & Reload</button>
+    </div>
+  </body>
+</html>

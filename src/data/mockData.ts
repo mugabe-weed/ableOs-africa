@@ -1,0 +1,236 @@
+import {
+  Opportunity,
+  CertificationBusiness,
+  AccessibleTaxi,
+  TourismSpot,
+  IncubatorStartup,
+  WalletTransaction,
+  SignLanguageSymbol,
+  DeveloperApiKey,
+} from "../types";
+
+export const initialOpportunities: Opportunity[] = [
+  {
+    id: "opp-1",
+    title: "Safaricom accessibility Technology Grant",
+    type: "Grant",
+    provider: "Safaricom Foundation",
+    amount: "KES 2,500,000 (~$19,000 USD)",
+    deadline: "2026-08-15",
+    region: "Kenya",
+    eligibility: ["Must leverage mobile USSD/web tech", "Led by or directly benefiting people with disabilities", "Minimum viable prototype exists"],
+    matchedPercentage: 98,
+  },
+  {
+    id: "opp-2",
+    title: "MTN Group Digital Inclusion Fellowship",
+    type: "Fellowship",
+    provider: "MTN Africa Network",
+    amount: "$15,000 USD Stipend + mentorship",
+    deadline: "2026-09-01",
+    region: "Pan-Africa",
+    eligibility: ["Under 35 years old", "Active developer or community manager in accessibility", "Willingness to integrate MTN MoMo rails"],
+    matchedPercentage: 92,
+  },
+  {
+    id: "opp-3",
+    title: "East African Community (EAC) e-Learning Tender",
+    type: "Tender",
+    provider: "EAC Procurement Office",
+    amount: "KES 14,000,000 (~$110,000 USD)",
+    deadline: "2026-07-20",
+    region: "East Africa",
+    eligibility: ["Registered corporate entity in East Africa", "Requires WCAG 2.2 compliant online classroom portal", "Include custom sign-language avatars"],
+    matchedPercentage: 85,
+  },
+  {
+    id: "opp-4",
+    title: "Remote WCAG 2.2 Portal Auditor (Full-time)",
+    type: "Remote Job",
+    provider: "Inclusive Technologies Ltd",
+    amount: "$3,800 USD / month",
+    deadline: "Immediate Start",
+    region: "Global (Remote Afr-timezone)",
+    eligibility: ["Knowledge of screen-reader testing", "Can use JAWS, NVDA, or Chrome audits", "Excellent documentation skills"],
+    matchedPercentage: 88,
+  },
+  {
+    id: "opp-5",
+    title: "AfDB Disability Entrepreneur Venture Fund",
+    type: "Funding",
+    provider: "African Development Bank",
+    amount: "$50,000 USD equity-free seed cap",
+    deadline: "2026-10-10",
+    region: "West & Southern Africa",
+    eligibility: ["A registered disability-led social business in Africa", "Focus on digital employment or training platforms"],
+    matchedPercentage: 95,
+  },
+];
+
+export const initialCertifiedBusinesses: CertificationBusiness[] = [
+  {
+    id: "biz-1",
+    name: "Standard Bank South Africa",
+    industry: "Banking & Finance",
+    region: "South Africa (Gauteng)",
+    accessibilityScore: 94,
+    status: "Certified",
+    badgeName: "Gold AAA",
+    auditFrequency: "Annual Audit (Next: June 2027)",
+  },
+  {
+    id: "biz-2",
+    name: "Safaricom PLC HQ",
+    industry: "Telecommunications",
+    region: "Kenya (Nairobi)",
+    accessibilityScore: 91,
+    status: "Certified",
+    badgeName: "Gold AAA",
+    auditFrequency: "Bi-Annual Audit (Next: Oct 2026)",
+  },
+  {
+    id: "biz-3",
+    name: "Kigali Innovation City Academic Portal",
+    industry: "Education & Public Services",
+    region: "Rwanda (Kigali)",
+    accessibilityScore: 82,
+    status: "Certified",
+    badgeName: "Silver AA",
+    auditFrequency: "Annual Audit (Next: Jan 2027)",
+  },
+  {
+    id: "biz-4",
+    name: "Lagos State Transport e-Card System",
+    industry: "Transit & Logistics",
+    region: "Nigeria (Lagos)",
+    accessibilityScore: 78,
+    status: "Auditing",
+    badgeName: "Bronze A",
+    auditFrequency: "Immediate Realtime Scan Ongoing",
+  },
+];
+
+export const initialTaxis: AccessibleTaxi[] = [
+  {
+    id: "taxi-1",
+    driverName: "Kofi Mensah - AbleCabs Kigali",
+    vehicleType: "Modified Toyota HiAce (Ramp Enabled)",
+    accessibilityFeatures: ["Hydraulic Wheelchair Ramp", "Tactile tactile layout labels", "Audio route broadcast inside cabin"],
+    distanceMinutes: 4,
+    rating: 4.9,
+    status: "Available",
+  },
+  {
+    id: "taxi-2",
+    driverName: "Grace Mwangi - SafeTransit Kenya",
+    vehicleType: "Low-Floor electric SUV Van",
+    accessibilityFeatures: ["Wide entry step-gates", "Certified sign language speaker", "Spacious room for service guide dogs"],
+    distanceMinutes: 12,
+    rating: 4.8,
+    status: "En Route",
+  },
+  {
+    id: "taxi-3",
+    driverName: "Sipho Dlamini - Cape Mobility",
+    vehicleType: "Toyota Quantum (Wheelchair Lift)",
+    accessibilityFeatures: ["Heavy-duty electric elevator loader", "Assistive strap systems"],
+    distanceMinutes: 8,
+    rating: 5.0,
+    status: "Available",
+  },
+];
+
+export const initialTourismSpots: TourismSpot[] = [
+  {
+    id: "spot-1",
+    name: "Serena Hotel Kigali - Audited Accessible Wing",
+    category: "Hotel",
+    region: "Rwanda",
+    accessibilityRating: 5,
+    features: ["Step-free roll-in showers", "Low height reception counters", "Braille room keys & menus", "Full elevator guidance"],
+    priceRange: "$220 - $350 / night",
+  },
+  {
+    id: "spot-2",
+    name: "Nairobi National Park - Whispering Slopes Boardwalk",
+    category: "Nature Trail",
+    region: "Kenya",
+    accessibilityRating: 4,
+    features: ["Fully paved anti-slip wooden boardwalks", "Disabled parking areas", "Text-to-speech audio codes on species information boards"],
+    priceRange: "$40 USD Entry",
+  },
+  {
+    id: "spot-3",
+    name: "The Blue Room - Inclusive African Bistro",
+    category: "Restaurant",
+    region: "South Africa (Cape Town)",
+    accessibilityRating: 5,
+    features: ["Sub-vibe tactile acoustic speaker system for hearing aids", "Braille menu", "Spcious seating layouts"],
+    priceRange: "$$ (Moderate)",
+  },
+];
+
+export const initialStartups: IncubatorStartup[] = [
+  {
+    id: "start-1",
+    title: "EcoSign Keyboard Devices",
+    founder: "Jean-Paul Habimana",
+    stage: "MVP Completed",
+    description: "Developing physical low-cost mechanical assistive braille keyboard add-ons using solar-power batteries.",
+    mentorsBooked: ["Dr. Evelyn Gitau (Telecom Lead)", "Mark Southwood (UX Advisor)"],
+    investorInterestPercentage: 75,
+    fundingWanted: "$20,000 USD",
+  },
+  {
+    id: "start-2",
+    title: "Sauti Maps - Voice Wayfinding",
+    founder: "Nneka Obi",
+    stage: "Early Scaling",
+    description: "Spatial audio voice guidance overlays delivering 0.5-meter step warning alerts for blind users using standard GSM networks.",
+    mentorsBooked: ["Tunde Folawiyo (Ecosystem scale)"],
+    investorInterestPercentage: 90,
+    fundingWanted: "$100,000 USD",
+  },
+];
+
+export const initialTransactions: WalletTransaction[] = [
+  {
+    id: "tx-1",
+    type: "Grant Deposit",
+    amount: 154000,
+    provider: "Bank Transfer",
+    status: "Completed",
+    refCode: "TXN-8742-AD7",
+    date: "2026-05-24",
+  },
+  {
+    id: "tx-2",
+    type: "Payout",
+    amount: 4500,
+    provider: "MTN MoMo",
+    status: "Completed",
+    refCode: "MOMO-9931-KIG",
+    date: "2026-05-26",
+  },
+  {
+    id: "tx-3",
+    type: "Invoiced Out",
+    amount: 18000,
+    provider: "Stripe",
+    status: "Processing",
+    refCode: "STR-0935-ACC",
+    date: "2026-05-28",
+  },
+];
+
+export const initialSignLanguage: SignLanguageSymbol[] = [
+  { word: "HELLO", keyframes: ["scale-100 rotate-0", "translate-x-4 rotate-12", "translate-y-2 -rotate-12", "scale-105 rotate-0"], description: "Raise hand open-palm and wave gently sideways." },
+  { word: "THANK YOU", keyframes: ["translate-y-0 scale-100", "translate-y-4 scale-95", "translate-y-2 scale-102", "translate-y-0 scale-100"], description: "Touch chin with your open right hand fingers then draw down and forward." },
+  { word: "ACCESSIBLE", keyframes: ["scale-100", "scale-110", "scale-100", "scale-105"], description: "Clasp hands loosely in front to symbolize bridging and inclusion." },
+  { word: "BUSINESS", keyframes: ["rotate-0", "rotate-45", "-rotate-45", "rotate-0"], description: "Rub palms in circular gesture indicating manufacturing or trading." },
+];
+
+export const initialDeveloperKeys: DeveloperApiKey[] = [
+  { id: "key-1", key: "aos_live_94f837bd9d0c24a9190d", label: "Production OCR Terminal Gateway", createdOn: "2026-01-10", callsThisMonth: 8940, status: "Active" },
+  { id: "key-2", key: "aos_test_88d1c12be8f047cb821d", label: "Development Compliance Scan Hook", createdOn: "2026-05-01", callsThisMonth: 120, status: "Active" },
+];

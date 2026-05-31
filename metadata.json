@@ -1,0 +1,6 @@
+{
+  "name": "AbleOS Africa",
+  "description": "The Digital Accessibility Operating System for Africa - economic empowerment, enterprise compliance, and AI-first assistive infrastructure.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
